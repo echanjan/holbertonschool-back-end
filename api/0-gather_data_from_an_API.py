@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-""""API que brinda información ficticia"""
+"""Consumimos API para extraer información ficticia"""
 import requests
 from sys import argv
 
 
 def main():
-    """Nombre y número de tareas de un empleado"""
+    """Consultamos el nombre y las tareas de un empleado."""
     if len(argv) > 1 and argv[1].isdigit():
         id = argv[1]
 
@@ -37,7 +37,7 @@ def main():
                         print(f'\t {todo["title"]}')
 
         except requests.exceptions.HTTPError as e:
-            print(f'\t {todo["title"]}')
+            print(f"Error de solicitud: {e}")
 
 
 if __name__ == '__main__':

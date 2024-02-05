@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """Consumimos API para extraer información ficticia"""
 import csv
 import requests

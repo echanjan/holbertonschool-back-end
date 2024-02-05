@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """"API que brinda información ficticia"""
 import json
 import requests
